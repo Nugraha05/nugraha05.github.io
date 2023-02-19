@@ -15,9 +15,14 @@ a {
     text-decoration: none;
 }
 
+
+
+
+
+
 /* Navbar Styling */
 
-.section.navbar {
+/* .section.navbar {
     position: fixed;
     background-color: white;
     width: 100%;
@@ -65,7 +70,12 @@ a {
     background-color: #BE1E2D;
     border-radius: 5rem;
     padding: 0.5rem 2rem;
-}
+} */
+
+
+
+
+
 
 /* Home Styling */
 
@@ -111,7 +121,7 @@ a {
 }
 
 .section.home {
-    background-image: url(assets/face-sekolah-dipo-1.jpg);
+    background-image: url(assets/sekolah-smkdiponegoro1.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -120,6 +130,11 @@ a {
     width: 100%;
     height: 100vh;
 }
+
+
+
+
+
 
 /* Profile Styling */
 
@@ -151,7 +166,6 @@ a {
     margin-left: 15rem;
     width: 80%;
     height: 80%;
-
 }
 
 .profile-left-title {
@@ -167,6 +181,11 @@ a {
     font-size: 18px;
     font-weight: 300;
 }
+
+
+
+
+
 
 /* Berita Styling */
 
@@ -211,6 +230,11 @@ a {
     margin: 0.5px;
     /* opacity: 0.5; */
 }
+
+
+
+
+
 
 /* Jurusan Styling */
 
@@ -320,14 +344,24 @@ a {
     text-align: justify;
 }
 
+
+
+
+
+
 /* PPDB Styling */
 
-.section.ppdb {
+/* .section.ppdb {
     background-color: white;
     height: 100vh;
     min-width: 80%;
     max-width: 180%;
-}
+} */
+
+
+
+
+
 
 /* Footer Styling */
 
@@ -362,4 +396,119 @@ a {
 
 .footer.last a {
     color: black;
+}
+
+
+
+
+
+
+/* Fasilitas Styling */
+
+.section.fasilitas {
+    margin-bottom: 10rem;
+}
+
+.splide_wrapper {
+    text-align: center;
+    padding: 0 13rem;
+}
+
+.card_fasilitas img {
+    max-width: 50%;
+    display: inline;
+}
+
+.splide__pagination__page {
+    bottom: -3rem;
+}
+
+.splide .title {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.splide .subtitle {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Style */
+
+@media screen and (max-width: 980px) {
+    /* Beranda Styling */
+    .home-title {
+        display: block;
+    }
+    .profile.foto img {
+        display: none;
+    }
+    .profile.foto {
+        display: inline;
+        position: absolute;
+    }
+    .profile-left-subtitle {
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+
+
+    /* Fasilitas Styling */
+    .splide_wrapper {
+        padding: 0 3rem;
+    }
+    .splide .title {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .splide .subtitle {
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    /* Beranda Styling */
+    .profile-left-subtitle {
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+
+
+    /* Fasilitas Styling */
+    .card_fasilitas img {
+    /* max-width: 100%; */
+        max-width: 100%;
+    }
+    .splide_wrapper {
+        padding: 0 3rem;
+    }
+    .splide .title {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .splide .subtitle {
+        font-size: 0.8rem;
+        font-weight: 400;
+        padding: 0;
+    }
 }
