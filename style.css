@@ -113,7 +113,9 @@ a {
 .home-headtitle {
     font-size: 20px;
     font-weight: 300;
-    width: 80%;
+    min-width: 50%;
+    max-width: 70%;
+    margin: auto;
 }
 
 .home {
@@ -128,7 +130,6 @@ a {
     background-color: #cccccc;
     /* background-color: #2a2a2a; */
     width: 100%;
-    height: 100vh;
 }
 
 
@@ -452,6 +453,12 @@ a {
 /* Responsive Style */
 
 @media screen and (max-width: 980px) {
+    .home-headtitle span {
+        font-size: 50px;
+    }
+    
+    
+    
     /* Beranda Styling */
     .home-title {
         display: block;
