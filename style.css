@@ -456,6 +456,10 @@ a {
     .home-headtitle span {
         font-size: 50px;
     }
+    .home-title {
+        position: relative;
+        top: 12rem;
+    }
 
     /* Beranda Styling */
     .home-title {
