@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* Navbar Styling */
+
+/* .section.navbar {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    margin: auto;
+    z-index: 5;
+    border-bottom: 2px solid #BE1E2D;
+}
+
+.navbar.menu {
+    min-width: 50%;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.navbar.menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar.menu ul li {
+    display: inline;
+}
+
+.navbar.menu img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.navbar.menu ul li a {
+    text-decoration: none;
+    color: black;
+    margin: 0 1.5rem;
+}
+
+.button.cbt {
+    color: #BE1E2D;
+    font-weight: 500;
+}
+
+.button.login {
+    color: white;
+    font-weight: 500;
+    background-color: #BE1E2D;
+    border-radius: 5rem;
+    padding: 0.5rem 2rem;
+} */
+
+
+
+
+
+
+/* Home Styling */
+
+.home.foto {
+    display: flex;
+    height: 100vh;
+}
+
+.content-foto-1 {
+    z-index: 1;
+}
+
+.content-foto-2 {
+    margin-left: -300px;
+    z-index: 1;
+}
+
+.content-foto-3 {
+    margin-left: -300px;
+    z-index: 0;
+}
+
+.home-title {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-headtitle span {
+    font-weight: 800;
+    font-size: 64px;
+}
+
+.home-headtitle {
+    font-size: 20px;
+    font-weight: 300;
+    width: 80%;
+}
+
+.home {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.section.home {
+    background-image: url(assets/sekolah-smkdiponegoro1.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #cccccc;
+    /* background-color: #2a2a2a; */
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+
+
+/* Profile Styling */
+
+.section.profile {
+    background-color: white;
+    height: 100vh;
+}
+
+.profile-headtitle {
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 24px;
+    font-weight: 600;
+    color: #BE1E2D;
+    background-color: #BE1E2D;
+}
+
+.profile-headtitle span {
+    background-color: white;
+    padding: 1rem 3rem;
+}
+
+.profile.foto {
+    display: flex;
+    margin: 5rem auto;
+}
+
+.profile.foto img {
+    margin-left: 15rem;
+    width: 80%;
+    height: 80%;
+}
+
+.profile-left-title {
+    margin: 0 10rem;
+}
+
+.profile-left-headtitle {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.profile-left-subtitle {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+
+
+
+
+/* Berita Styling */
+
+.section.berita {
+    background-color: white;
+    height: 100vh;
+    min-width: 80%;
+    max-width: 180%;
+}
+
+.berita.wrapper {
+    min-width: 80%;
+    max-width: 180%;
+    background: #fff;
+}
+
+.berita.select {
+    /* position: relative; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.berita.radio {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+
+.berita.select .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.berita.select label {
+    height: 500px;
+    flex: 1;
+    transition: 0.3s;
+    margin: 0.5px;
+    /* opacity: 0.5; */
+}
+
+
+
+
+
+
+/* Jurusan Styling */
+
+.jurusan.title {
+    text-align: center;
+    margin: 5rem;
+}
+
+.jurusan.headtitle {
+    font-weight: 600;
+    font-size: 37px;
+}
+
+.jurusan.container {
+    display: flex;
+}
+
+.jurusan.wrapper {
+    max-width: 80%;
+    max-width: 100%;
+    background: #fff;
+}
+
+/* .jurusan.wrapper header{
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+} */
+
+.jurusan.select {
+    /* position: relative; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.jurusan.select .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.jurusan.select label {
+    height: 100vh;
+    flex: 1;
+    transition: 0.3s;
+    margin: 0.5px;
+    /* opacity: 0.5; */
+    z-index: 1;
+}
+
+.jurusan.select .tkj {
+    background-image: linear-gradient(white ,#E54D25);
+}
+
+.jurusan.select .otkp {
+    background-image: linear-gradient(white ,#1880C1);
+}
+
+.jurusan.select .mm {
+    background-image: linear-gradient(white ,#28A84C);
+}
+
+.jurusan.select label:hover {
+    flex: 3;
+    /* opacity: 1; */
+}
+
+#content1:checked ~ nav label.mm,
+#content2:checked ~ nav label.otkp,
+#content3:checked ~ nav label.tkj{
+    color: #fff;
+}
+
+.jurusan.wrapper input[type="radio"]{
+    display: none;
+}
+
+#content2:checked ~ nav .slider{
+    left: 20%;
+}
+#content3:checked ~ nav .slider{
+    left: 40%;
+}
+
+.contents .content{
+    display: none;
+    background: #fff;
+    margin: 0 6.5rem 5rem 6.5rem;
+}
+
+#content1:checked ~ section .content-1,
+#content2:checked ~ section .content-2,
+#content3:checked ~ section .content-3{
+    display: block;
+}
+
+.contents .content .title{
+    font-size: 21px;
+    font-weight: 500;
+    margin: 30px 0 10px 0;
+}
+
+.contents .content p{
+    text-align: justify;
+}
+
+
+
+
+
+
+/* PPDB Styling */
+
+/* .section.ppdb {
+    background-color: white;
+    height: 100vh;
+    min-width: 80%;
+    max-width: 180%;
+} */
+
+
+
+
+
+
+/* Footer Styling */
+
+.footer.columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.footer.columns .column {
+    margin: 3rem auto;
+}
+
+.footer.columns .column p {
+    font-weight: 600;
+}
+
+.footer.columns .column a {
+    display: block;
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+}
+
+.footer.last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.footer.last a {
+    color: black;
+}
+
+
+
+
+
+
+/* Fasilitas Styling */
+
+.section.fasilitas {
+    margin-bottom: 10rem;
+}
+
+.splide_wrapper {
+    text-align: center;
+    padding: 0 13rem;
+}
+
+.card_fasilitas img {
+    max-width: 50%;
+    display: inline;
+}
+
+.splide__pagination__page {
+    bottom: -3rem;
+}
+
+.splide .title {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.splide .subtitle {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Style */
+
+@media screen and (max-width: 980px) {
+    /* Beranda Styling */
+    .home-title {
+        display: block;
+    }
+    .profile.foto img {
+        display: none;
+    }
+    .profile.foto {
+        display: inline;
+        position: absolute;
+    }
+    .profile-left-subtitle {
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+
+
+    /* Fasilitas Styling */
+    .splide_wrapper {
+        padding: 0 3rem;
+    }
+    .splide .title {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .splide .subtitle {
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    /* Beranda Styling */
+    .profile-left-subtitle {
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+
+
+    /* Fasilitas Styling */
+    .card_fasilitas img {
+    /* max-width: 100%; */
+        max-width: 100%;
+    }
+    .splide_wrapper {
+        padding: 0 3rem;
+    }
+    .splide .title {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .splide .subtitle {
+        font-size: 0.8rem;
+        font-weight: 400;
+        padding: 0;
+    }
+}
