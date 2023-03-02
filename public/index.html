@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMK Diponegoro 1</title>
+    <link rel="shortcut icon" type="image/png" href="assets/logo.png">
+
+    <!-- Tailwindcss -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Styling Css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- AOS-->
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" type="text/css" rel="stylesheet"> <!-- Splide JS-->
+</head>
+<body>
+    
+    <section>
+
+        <!-- Navbar Start -->
+        <div class="bg-white w-[100%] border-b-4 border-[#50b141] fixed z-50">
+            <nav class="flex justify-between items-center w-[75%] mx-auto py-4">
+                <div class="z-10">
+                    <img data-aos="fade-right" class="w-12" src="assets/logo.webp" alt="Logo SMK Diponegoro 1">
+                </div>
+                <div class="float-left nav-links duration-500 md:static fixed bg-white md:min-h-fit min-h-[50vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                    <ul data-aos="fade-right" class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                        <li>
+                            <a class="hover:text-gray-500 font-medium" href="#beranda">Beranda</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-gray-500 font-medium" href="#profile">Profile</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-gray-500 font-medium" href="#jurusan">Jurusan</a>
+                        </li>   
+                        <li>
+                            <a class="hover:text-gray-500 font-medium" href="#fasilitas">Fasilitas</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-gray-500 font-medium" href="#ppdb">PPDB</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-gray-500 font-medium" href="#berita">Berita</a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-aos="fade-right" class="flex items-center gap-6">
+                    <a class="hover:text-gray-500 text-[#50b141] font-semibold" href="#">CBT</a>
+                    <button class="bg-[#50b141] text-white px-6 py-2 rounded-full hover:bg-gray-500">Login</button>
+                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+    
+        <!-- Beranda Start -->
+        <div id="beranda" class="w-full h-screen">
+            <!-- <video data-aos="fade-up" class="brightness-[40%] w-full fixed mb-6" autoplay loop controls muted>
+                <source src="assets/kelas-industri.mp4" type="video/mp4"/>
+            </video> -->
+            <img class="brightness-50 fixed bg-cover w-[100%] h-[100vh]" src="assets/sekolah-smkdiponegoro1.webp" alt="Sekolah SMK Diponegoro 1">
+            <div class=" py-24 sm:py-32 fixed">
+                <div class="mx-auto lg:px-[10rem] py-[10rem]">
+                    <div class="mx-auto lg:mt-[5rem] left-[20rem] flex">
+                        <div class="flex invisible lg:visible z-20">
+                            <img data-aos="fade-right" data-aos-duration="2000" class="relative -top-[10rem] h-[85vh]" src="assets/pesdik-dkv.webp" alt="Pesdik DKV">
+                            <img data-aos="fade-up" data-aos-duration="2500" class="relative -left-[16rem] -top-[20rem] z-10 h-[100vh]" src="assets/pesdik-mp.webp" alt="Pesdik MP">
+                            <img data-aos="fade-left" data-aos-duration="3000" class="relative -left-[30rem] -top-[9rem] h-[80vh]" src="assets/pesdik-tkj.webp" alt="Pesdik TKJ">
+                        </div>
+                        <div class="relative flex-auto lg:w-[50%] z-0 mx-auto -left-[7rem]">
+                            <h3 data-aos="fade-right" data-aos-duration="3000" class="text-white lg:text-5xl font-bold tracking-tight text-gray-900 text-xl">SMK Diponegoro 1</h3>
+                            <p data-aos="fade-right" data-aos-duration="3000" class="text-white mt-6 lg:text-xl leading-7 text-base mb-10">Selamat datang di Website resmi Sekolah Menengah Kejuruan Diponegoro 1 Jakarta. Di era digital saat ini, website sekolah merupakan pintu gerbang informasi terdepan sebagai sarana untuk menyebarluaskan berbagai publikasi terkait kemajuan pendidikan dan pencapaian SMK DIPONEGORO 1 Jakarta terkini.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Beranda End -->
+    
+        <!-- Profile Start -->
+        <div id="profile" class="relative md:z-10 bg-white mx-auto">
+            <div class="bg-white py-24 sm:py-32">
+                <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+                        <div class="p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+                            <div class="bg-white">
+                                <img data-aos="fade-right" data-aos-duration="2500" data-delay-aos="300" class="mx-auto w-[20%] absolute left-100 top-[15rem] invisible md:visible z-10" src="assets/logo-yayasan.webp" alt="Logo Yayasan SMK Diponegoro 1">
+                            </div>
+                        </div>
+                        <div class=" bg-white p-8 sm:p-10 lg:flex-auto">
+                            <h3 data-aos="fade-right" class="text-2xl lg:text-4xl font-bold tracking-tight text-gray-900">SMK Diponegoro 1</h3>
+                            <p data-aos="fade-right" class="mt-6 text-base leading-7 text-gray-600 font-bold">Assalaamu’alaikum Warahmatullahi Wabarakatuh. Salam sejahtera untuk kita sekalian.</p>
+                            <p data-aos="fade-right" class="mt-6 text-base leading-7 text-gray-600">Segala puji syukur kita naikkan ke hadirat Tuhan Yang Maha Esa, karena atas limpahan rahmat, dan karunia-Nya sehingga Website sekolah terus kita kembangkan. Ucapan terima kasih juga kami haturkan kepada semua pihak yang sudah memberikan suport dan fasilitasi untuk kelancaran pengembangan Website ini.</p>
+                            <p data-aos="fade-right" class="mt-6 text-base leading-7 text-gray-600">Selamat datang di Website resmi Sekolah Menengah Kejuruan Diponegoro 1 Jakarta. Di era digital saat ini, website sekolah merupakan pintu gerbang informasi terdepan sebagai sarana untuk menyebarluaskan berbagai publikasi terkait kemajuan pendidikan dan pencapaian SMK DIPONEGORO 1 Jakarta terkini.</p>
+                            <p data-aos="fade-right" class="mt-6 text-base leading-7 text-gray-600">Sebagai media pembelajaran, terlebih di masa pandemi masih berlangsung, website sekolah juga diarahkan dapat mendatangkan kemanfaatan sebagai sarana pembelajaran dengan memuat blog , e-learning, karya dan media pembelajaran yang dibuat oleh pendidik serta para siswa.</p>
+                            <p data-aos="fade-right" class="mt-6 text-base leading-7 text-gray-600">SMK DIPONEGORO 1 Jakarta BANGGA, BERKARYA BERJAYA… Kiranya Tuhan Yang Maha Esa meridhoi setiap usaha mulia kita di bidang Pendidikan.</p>
+                            <p data-aos="fade-right" class="mt-6 text-base leading-7 text-gray-600">Wassalamu alaikum Warahmatullahi Wabarakatuh</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="mp"></div>
+            </div>
+        </div>
+        <!-- Profile End -->
+    
+        <!-- Jurusan Start -->
+        <div id="jurusan" class="relative md:z-10 bg-white mx-auto">
+            <div class="flex justify-center items-center h-1 flex-auto bg-[#50b141] w-100%"><span class="font-semibold text-2xl bg-white px-6 py-2 ">Jurusan</span></div>
+            <div class="py-12">
+                <!-- Manajemen Perkantoran Information -->
+                <div class="bg-white lg:py-1 sm:py-32">
+                    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+                            <div class="p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+                                <div class="bg-white">
+                                    <img data-aos="fade-right" data-aos-duration="2500" data-delay-aos="300" class="mx-auto w-[20%] absolute left-100 top-5 invisible md:visible z-10" src="assets/pesdik-mp.webp" alt="Pesdik MP">
+                                    <img data-aos="fade-right" class="absolute w-[7%] lg:left-[22rem] top-[7rem] invisible md:visible z-0" src="assets/mplogo.webp" alt="Logo OTKP">
+                                </div>
+                            </div>
+                            <div class=" bg-white p-2 sm:p-4 lg:flex-auto">
+                                <h3 data-aos="fade-right" class="text-2xl font-bold tracking-tight text-gray-900">Manajemen Perkantoran</h3>
+                                <p data-aos="fade-right" class="mt-6 text-base leading-7 text-gray-600">Jurusan Manajemen Perkantoran atau dulunya Otomatisasi Tata Kelola Perkantoran (OTKP) merupakan salah salah satu jurusan di Sekolah Menengah Kejuruan (SMK) yang memberikan bekal tentang pengetahuan, keterampilan, dan sikap dalam menyelesaikan pekerjaan-pekerjaan perusahaan atau kantor. Manajemen Perkantoran salah satu ilmu Manajemen yang mempunyai spesifikasi khusus dalam bidang perkantoran, artinya dalam ilmu Perkantoran dipelajari secara detail segala kebutuhan yang berkaitan dengan kegiatan perkantoran.</p>
+                                <div class="mt-10 flex items-center gap-x-6">
+                                    <h4 data-aos="fade-right" class="flex-none text-medium font-semibold leading-6 text-black">Kompetensi</h4>
+                                    <div data-aos="fade-right" class="h-px flex-auto bg-black"></div>
+                                </div>
+                                <ol role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-3 sm:gap-6">
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                            Mengelola Rapat & Perjalanan Dinas
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="list-disc flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Pelayanan Prima Kepada Pelanggan
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Business Letter / Surat Niaga & Dinas
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Public Relations
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Office Communication
+                                    </li>
+                                    
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Ekonomi Bisnis
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Mengarsipkan Dokumen Kantor
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Manajemen Kepegawaian
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Manajemen Keuangan
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Manajemen Saran & Prasarana Kantor
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Produk Kreatifitas & Kewirausahaan
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Multimedia Information -->
+                <div id="dkv" class="bg-white lg:py-40 sm:py-32">
+                    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+                            <div class="p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+                                <div class="bg-white">
+                                    <img data-aos="fade-right" data-aos-duration="2500" data-delay-aos="300" class="mx-auto w-[20%] absolute left-100 top-[54rem] invisible md:visible z-10" src="assets/pesdik-dkv.webp" alt="Pesdik DKV">
+                                    <img data-aos="fade-right" class="absolute w-[8%] lg:left-[22rem] top-[58rem] invisible md:visible z-0" src="assets/dkvlogo.webp" alt="Logo DKV">
+                                </div>
+                            </div>
+                            <div class=" bg-white p-2 sm:p-4 lg:flex-auto">
+                                <h3 data-aos="fade-right" class="text-2xl font-bold tracking-tight text-gray-900">Desain Komunikasi Visual</h3>
+                                <p data-aos="fade-right" class="mt-6 text-base leading-7 text-gray-600">Jurusan Desain Komunikasi Visual adalah salah satu jurusan di SMK yang mempelajari tentang penggunaan komputer. Belajar multimedia di SMK berarti kita belajar bagaimana menyajikan data dalam bentuk suara, animasi, teks, gambar, maupun video. Materi Jurusan Desain Komunikasi Visual di SMK mengharuskan kita menggunakan berbagai macam tools, seperti Adobe After Effect, CorelDraw, Freehand, Adobe Photoshop, atau yang lain. Mata pelajaran SMK Desain Komunikasi Visual antara lain Simulasi dan Komunikasi Digital, Sistem Komputer, Komputer dan Jaringan Dasar, Pemrograman Dasar, Dasar Desain Grafis, Desain Grafis Percetakan, Desain Media Interaktif, Animasi 2D dan 3D, Teknik Pengolahan Audio dan Video, dan masih banyak lagi.</p>
+                                <div class="mt-10 flex items-center gap-x-6">
+                                    <h4 data-aos="fade-right" class="flex-none text-medium font-semibold leading-6 text-black">Kompetensi</h4>
+                                    <div data-aos="fade-right" class="h-px flex-auto bg-black"></div>
+                                </div>
+                                <ol role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-3 sm:gap-6">
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                            Desain Grafis
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="list-disc flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Animasi 2D dan 3D
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Desain Grafis Percetakan
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Desain Media Interaktif (WEB)
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Fotografi
+                                    </li>
+                                    
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Teknik Pengambilan Video
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Editing Video
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Tata Cahaya
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Pemograman Dasar
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Perakitan PC
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Produk Kreatif & Kewirausahaan
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tkj"></div>
+                </div>
+        
+                <!-- Teknik Komputer Jaringan Information -->
+                <div class="bg-white lg:py-2 sm:py-32 mb-[6rem]">
+                    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+                            <div class="p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+                                <div class="bg-white">
+                                    <img data-aos="fade-right" data-aos-duration="2500" data-delay-aos="300" class="mx-auto w-[20%] absolute left-100 top-[106rem] invisible md:visible z-10" src="assets/pesdik-tkj.webp" alt="Pesdik TKJ">
+                                    <img data-aos="fade-right" class="absolute w-[9%] lg:left-[24rem] top-[110rem] invisible md:visible z-0" src="assets/tkjlogo.webp" alt="Logo TKJ">
+                                </div>
+                            </div>
+                            <div class=" bg-white p-2 sm:p-10 lg:flex-auto">
+                                <h3 data-aos="fade-right" class="text-2xl font-bold tracking-tight text-gray-900">Teknik Komputer Jaringan</h3>
+                                <p data-aos="fade-right" class="mt-6 text-base leading-7 text-gray-600">Jurusan TKJ Adalah singkatan dari Teknik Komputer Jaringan. TKJ merupakan sebuah kejuruan yang mempelajari tentang cara merakit komputer, mengenal dan mempelajari komponen hardware apa saja yang ada di dalam komputer, merakit komputer serta fokus mempelajari jaringan dasar. Tidak hanya itu selama tiga tahun belajar di TKJ anda akan belajar sistem kerja jaringan dan pemograman web serta meng-administrasi komputer jaringan.</p>
+                                <div class="mt-10 flex items-center gap-x-6">
+                                    <h4 data-aos="fade-right" class="flex-none text-medium font-semibold leading-6 text-black">Kompetensi</h4>
+                                    <div data-aos="fade-right" class="h-px flex-auto bg-black"></div>
+                                </div>
+                                <ol role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-3 sm:gap-6">
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Perakitan PC
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="list-disc flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Desain Grafis
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Pemograman Dasar/Web
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        LAN, MAN, WAN, Intranet dan internet
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Keamanan Jaringan
+                                    </li>
+                                    
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Administrasi Sistem Jaringan
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Teknologi Layanan Jaringan
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Administrasi Infrastruktur Jaringan
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Web Hosting (VPS)
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Produk Kreatif & Kewirausahaan
+                                    </li>
+        
+                                    <li data-aos="fade-right" class="flex gap-x-3">
+                                        <svg class="h-6 w-5 flex-none text-black" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                        </svg>
+                                        Sistem Operasi Jaringan 
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Jurusan End -->
+        
+        <!-- Fasilitas Start -->
+        <div id="fasilitas" class="relative md:z-10 bg-white mx-auto">
+            <div class="flex justify-center items-center h-1 flex-auto bg-[#50b141] w-100%"><span class="font-semibold text-2xl bg-white px-6 py-2 ">Fasilitas</span></div>
+            <div class="splide_wrapper items-center w-[75%] mx-auto py-[7rem]">
+                <div class="splide" id="splide1">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="splide__slide">
+                                <div class="card_fasilitas">
+                                    <img data-aos="fade-up" class="mx-auto py-12 md:h-[65vh] 2xl:h-[70vh]" src="assets/gedung-sekolah-smk.webp" alt="Denah Gedung Sekolah SMK">
+                                    <p  data-aos="fade-up" class="text-center text-2xl font-semibold">Gedung Sekolah</p>
+                                    <p  data-aos="fade-up" class="leading-relaxed font-normal py-8 md:px-12 2xl:px-48">Tampak Depan dari sekolah SMK Diponegoro 1 Yayasan Al hidayah. Memiliki 2 Lantai, Lantai Pertama untuk kelas 10 Desain Komunikasi Visual (DKV), Manajemen Perkantoran (MP), Ruang Guru, Ruang Tata Usaha maupun Studio Multimedia, untuk Lantai Kedua Terdapat Kelas 11 Teknik Komputer Jaringan (TKJ), Manajemen Perkantoran (MP), Multimedia (MM) dan Kelas 12 Multimedia (MM), Teknik Komputer Jaringan (TKJ), Otomasisai Tata Kelola Perkantoran (OTKP). Sudah Terakreditasi A.</p>
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="card_fasilitas">
+                                    <img data-aos="fade-up" class="mx-auto py-12 md:h-[65vh] 2xl:h-[70vh]" src="assets/kantin-smk.webp" alt="Denah Kantin SMK">
+                                    <p data-aos="fade-up" class="text-center text-2xl font-semibold">Kantin Sekolah</p>
+                                    <p data-aos="fade-up" class="leading-relaxed font-normal py-8 md:px-12 2xl:px-48">Kantin Sekolah terdapat beberapa jualan yang menarik dari makanan ringan sampai makanan berat dan sangat banyak beraneka minuman. Biasanya kantin menjadi lokasi yang sangat menarik untuk bertemu teman baru antar kelas.</p>
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="card_fasilitas">
+                                    <img data-aos="fade-up" class="mx-auto py-12 md:h-[65vh] 2xl:h-[70vh]" src="assets/studio-multimedia-smk.webp" alt="Denah Studio Multimedia SMK">
+                                    <p data-aos="fade-up" class="text-center text-2xl font-semibold">Studio Multimedia</p>
+                                    <p data-aos="fade-up" class="leading-relaxed font-normal py-8 md:px-12 2xl:px-48">Tempat Studio Multimedia biasanya digunakan untuk melakukan Photoshoot, Shooting Film maupun melakukan aktifitas lainnya seperti untuk tempat pembelajaran Siswa Multimedia dari Kelas 10, 11, dan 12.</p>
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="card_fasilitas">
+                                    <img data-aos="fade-up" class="mx-auto py-12 md:h-[65vh] 2xl:h-[70vh]" src="assets/lab-multimedia-smk.webp" alt="Denah Lab Multiemdia SMK">
+                                    <p data-aos="fade-up" class="text-center text-2xl font-semibold">Lab Multimedia (MM)</p>
+                                    <p data-aos="fade-up" class="leading-relaxed font-normal py-8 md:px-12 2xl:px-48">Lab Multimedia (MM) digunakan untuk para Siswa Multimedia melakukan Presentasi, Praktek, Belajar, dan sudah dilengkapi dengan komputer yang memadai untuk melakukan praktek, Fasilitas lainnya dilengkapi oleh AC dan Kamera maupun Lightning yang sudah tersedia.</p>
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="card_fasilitas">
+                                    <img data-aos="fade-up" class="mx-auto py-12 md:h-[65vh] 2xl:h-[70vh]" src="assets/lab-otkp-smk.webp" alt="Denah Lab OTKP SMK">
+                                    <p data-aos="fade-up" class="text-center text-2xl font-semibold">Lab Otomatisasi Tata Kelola Perkantoran (OTKP)</p>
+                                    <p data-aos="fade-up" class="leading-relaxed font-normal py-8 md:px-12 2xl:px-48">Lab Otomatisasi Tata Kelola Perkantoran (OTKP) digunakan untuk para Siswa Otomatisasi Tata Kelola Perkantoran (OTKP) melakukan Presentasi, Praktek, Belajar, dan sudah dilengkapi dengan komputer yang memadai untuk melakukan praktek, Fasilitas lainnya dilengkapi oleh AC dan dilengkapi dengan alat perkantoran.</p>
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="card_fasilitas">
+                                    <img data-aos="fade-up" class="mx-auto py-12 md:h-[65vh] 2xl:h-[70vh]" src="assets/lab-tkj.smk.webp" alt="Denah Lab TKJ SMK">
+                                    <p data-aos="fade-up" class="text-center text-2xl font-semibold">Lab Teknik Komputer Jaringan (TKJ)</p>
+                                    <p data-aos="fade-up" class="leading-relaxed font-normal py-8 md:px-12 2xl:px-48">Lab Teknik Komputer Jaringan (TKJ) digunakan untuk para Siswa Teknik Komputer Jaringan (TKJ) melakukan Presentasi, Praktek, Belajar, dan sudah dilengkapi dengan komputer yang memadai untuk melakukan praktek, Fasilitas lainnya dilengkapi oleh AC dan dilengkapi dengan alat system jaringan.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fasilitas End  -->
+
+        <!-- PPDB Start -->
+        <div id="ppdb" class="relative md:z-10 bg-white mx-auto">
+            <div class="flex justify-center items-center h-1 flex-auto bg-[#50b141] w-100%"><span class="font-semibold text-2xl bg-white px-6 py-2 ">PPDB Informasi</span></div>
+            <div class="py-[5rem]">
+                <div class="rounded-lg text-white lg:py-[1rem] text-center mx-auto w-[50%] lg:w-[20%] relative bg-[#50b141] -top-[-1rem] lg:-top-[-2rem] text-lg lg:text-2xl"><span data-aos="fade-up">PPDB Akan Dimulai</span></div>
+                <div id="countdown" class="gap-2 lg:gap-10 mx-auto flex justify-center items-center py-[rem] lg:py-[10rem] border-4 border-[#50b141] rounded-3xl w-[90%] lg:w-[75%]">
+                    <div class="text-center lg:border-4 border-[#50b141] rounded-3xl px-[0.5rem] py-6 lg:p-10">
+                        <p data-aos="fade-up" data-aos-duration="1500" id="days" class="text-[2rem] lg:text-[5rem] text-[#50b141] font-bold"></p>
+                        <p class="lg:text-3xl text-[#50b141]">Days</p>
+                    </div>
+                    <p class="text-[#50b141] text-2xl">:</p>
+                    <div class="text-center lg:border-4 border-[#50b141] rounded-3xl px-[0.5rem] py-6 lg:p-10">
+                        <p data-aos="fade-up" data-aos-duration="2000" id="hours" class="text-[2rem] lg:text-[5rem] text-[#50b141] font-bold"></p>
+                        <p class="lg:text-3xl text-[#50b141]">Hours</p>
+                    </div>
+                    <p class="text-[#50b141] text-2xl">:</p>
+                    <div class="text-center lg:border-4 border-[#50b141] rounded-3xl px-[0.5rem] py-6 lg:p-10">
+                        <p data-aos="fade-up" data-aos-duration="2500" id="minutes" class="text-[2rem] lg:text-[5rem] text-[#50b141] font-bold"></p>
+                        <p class="lg:text-3xl text-[#50b141]">Minutes</p>
+                    </div>
+                    <p class="text-[#50b141] text-2xl">:</p>
+                    <div class="text-center lg:border-4 border-[#50b141] rounded-3xl px-[0.5rem] py-6 lg:p-10">
+                        <p data-aos="fade-up" data-aos-duration="3000" id="seconds" class="text-[2rem] lg:text-[5rem] text-[#50b141] font-bold"></p>
+                        <p class="lg:text-3xl text-[#50b141]">Seconds</p>
+                    </div>
+                </div>
+                <div class="gap-[5rem] mx-auto md:flex-row flex-col flex justify-center items-center py-[10rem] w-[75%]">
+                    <div data-aos="fade-right" data-aos-duration="3000">
+                        <p class="flex justify-center items-center bg-[#50b141] text-white w-[50%] mx-auto text-white text-xl py-[0.5rem]">Jalur Zonasi</p>
+                        <p class="py-10 text-lg">Jalur sistem zonasi merupakan jalur penerimaan siswa berdasarkan zona tempat tinggal. Kementerian Pendidikan dan Kebudayaan (Kemendikbud), Permendikbud Nomor 44 Tahun 2019 memberlakukan jalur penerimaan ini. PPDB tahun 2020 dapat diikuti calon siswa yang akan masuk TK, SD, SMP, serta SMA/SMK.</p>
+                        <p class="flex justify-center items-center bg-[#c53f3c] text-white text-xl py-[0.5rem]">01 Jan - 10 Feb 2023</p>
+                    </div>
+                    <div data-aos="fade-right" data-aos-duration="2000">
+                        <p class="flex justify-center items-center bg-[#50b141] text-white w-[50%] mx-auto text-white text-lg py-[0.5rem]">Jalur Afirmasi</p>
+                        <p class="py-10 text-lg">Jalur afirmasi diberikan kepada penerima program penanganan keluar tidak mampu dari pemerintah pusat atau daerah, misalnya pemegang KIP. Sehingga syarat jalur afirmasi adalah peserta yang menerima bantuan dari pemerintah.</p>
+                        <p class="flex justify-center items-center bg-[#c53f3c] text-white text-xl py-[0.5rem]">05 Feb - 12 Maret 2023</p>
+                    </div>
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <p class="flex justify-center items-center bg-[#50b141] text-white w-[50%] mx-auto text-white text-lg py-[0.5rem]">Jalur Prestasi</p>
+                        <p class="py-10 text-lg">Jalur prestasi merupakan seleksi yang berdasarkan prestasi akademik maupun non-akademik pelajar. Jalur prestasi ini dapat digunakan untuk masuk ke perguruan tinggi atau sekolah tingkatan lainnya. Biasanya pelajar yang memiliki jalur prestasi  lebih mudah untuk diterima.</p>
+                        <p class="flex justify-center items-center bg-[#c53f3c] text-white text-xl py-[0.5rem]">21 Maret - 2 April 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PPDB End -->
+
+        <!-- Berita Start -->
+        <div id="berita" class="relative bg-white mx-auto lg:h-[100%]">
+            <div class="flex justify-center items-center h-1 flex-auto bg-[#50b141] w-100%"><span class="z-10 font-semibold text-2xl bg-white px-6 py-2 ">Berita</span></div>
+            <div class="splide_wrapper items-center w-[75%] mx-auto">
+                <div class="splide mt-[7rem] lg:mt-[12rem] pb-[12rem]" id="splide2">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="splide__slide">
+                                <div class="card_fasilitas">
+                                    <!-- <video data-aos="fade-up" class="w-full mb-6" autoplay loop controls muted>
+                                        <source src="assets/kelas-industri.mp4" type="video/mp4"/>
+                                    </video> -->
+                                    <img data-aos="fade-up" class="mx-auto w-full lg:h-[13.5rem] mb-6" src="assets/sekolah-smkdiponegoro1.webp" alt="Denah Gedung Sekolah SMK">
+                                    <a data-aos="fade-up" href="" class="text-2xl font-semibold py-[1rem] text-lg">Acara Pelatihan Industri Kelas XII Multimedia - OTKP - TKJ Di SMK Diponegoro 1</a>
+                                    <nav class="flex justify-between items-center mx-auto mt-[1rem]">
+                                        <div class="">
+                                            <p data-aos="fade-up" class="text-black/50">11 Januari 2023</p>
+                                        </div>
+                                        <div class="">
+                                            <p data-aos="fade-up" class="text-black/50">Exclusive</p>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="card_fasilitas">
+                                    <img data-aos="fade-up" class="mx-auto w-full lg:h-[13.5rem] mb-6" src="assets/sekolah-smkdiponegoro1.webp" alt="Denah Gedung Sekolah SMK">
+                                    <a data-aos="fade-up" href="" class="text-2xl font-semibold py-[1rem] text-lg">Acara Pelatihan Industri Kelas XII Multimedia - OTKP - TKJ Di SMK Diponegoro 1</a>
+                                    <nav class="flex justify-between items-center mx-auto mt-[1rem]">
+                                        <div class="">
+                                            <p data-aos="fade-up" class="text-black/50">21 Januari 2023</p>
+                                        </div>
+                                        <div class="">
+                                            <p data-aos="fade-up" class="text-black/50">Utama</p>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="card_fasilitas">
+                                    <img data-aos="fade-up" class="mx-auto w-full lg:h-[13.5rem] mb-6" src="assets/sekolah-smkdiponegoro1.webp" alt="Denah Gedung Sekolah SMK">
+                                    <a data-aos="fade-up" href="" class="text-2xl font-semibold py-[1rem] text-lg">Acara Pelatihan Industri Kelas XII Multimedia - OTKP - TKJ Di SMK Diponegoro 1</a>
+                                    <nav class="flex justify-between items-center mx-auto mt-[1rem]">
+                                        <div class="">
+                                            <p data-aos="fade-up" class="text-black/50">1 Februari 2023</p>
+                                        </div>
+                                        <div class="">
+                                            <p data-aos="fade-up" class="text-black/50">Viral</p>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="card_fasilitas">
+                                    <img data-aos="fade-up" class="mx-auto w-full lg:h-[13.5rem] mb-6" src="assets/sekolah-smkdiponegoro1.webp" alt="Denah Gedung Sekolah SMK">
+                                    <a data-aos="fade-up" href="" class="text-2xl font-semibold py-[1rem] text-lg">Acara Pelatihan Industri Kelas XII Multimedia - OTKP - TKJ Di SMK Diponegoro 1</a>
+                                    <nav class="flex justify-between items-center mx-auto mt-[1rem]">
+                                        <div class="">
+                                            <p data-aos="fade-up" class="text-black/50">17 Maret 2023</p>
+                                        </div>
+                                        <div class="">
+                                            <p data-aos="fade-up" class="text-black/50">Umum</p>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="card_fasilitas">
+                                    <img data-aos="fade-up" class="mx-auto w-full lg:h-[13.5rem] mb-6" src="assets/sekolah-smkdiponegoro1.webp" alt="Denah Gedung Sekolah SMK">
+                                    <a data-aos="fade-up" href=""  class="text-2xl font-semibold py-[1rem] text-lg">Acara Pelatihan Industri Kelas XII Multimedia - OTKP - TKJ Di SMK Diponegoro 1</a>
+                                    <nav class="flex justify-between items-center mx-auto mt-[1rem]">
+                                        <div class="">
+                                            <p data-aos="fade-up" class="text-black/50">28 Maret 2023</p>
+                                        </div>
+                                        <div class="">
+                                            <p data-aos="fade-up" class="text-black/50">Exclusive</p>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="card_fasilitas">
+                                    <img data-aos="fade-up" class="mx-auto w-full lg:h-[13.5rem] mb-6" src="assets/sekolah-smkdiponegoro1.webp" alt="Denah Gedung Sekolah SMK">
+                                    <a data-aos="fade-up" href=""  class="text-2xl font-semibold py-[1rem] text-lg">Acara Pelatihan Industri Kelas XII Multimedia - OTKP - TKJ Di SMK Diponegoro 1</a>
+                                    <nav class="flex justify-between items-center mx-auto mt-[1rem]">
+                                        <div class="">
+                                            <p data-aos="fade-up" class="text-black/50">9 April 2023</p>
+                                        </div>
+                                        <div class="">
+                                            <p data-aos="fade-up" class="text-black/50">Utama</p>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Berita End -->
+
+        <!-- Footer Start -->
+        <div class="relative bg-white mx-auto">
+            <div class=" bg-black/90 flex">
+                <div class="gap-[1rem] mx-auto md:flex-row flex-col lg:flex justify-center items-center py-[8rem] w-[75%]">
+                    <div class="mb-6">
+                        <div class="flex justify-content items-center">
+                            <p class="font-bold text-2xl lg:text-3xl text-white">SMK Diponegoro 1</p>
+                        </div>
+                        <p class="w-[80%] mt-3 text-white">Selamat datang di Website resmi Sekolah Menengah Kejuruan Diponegoro 1 Jakarta. Di era digital saat ini, website sekolah merupakan pintu gerbang informasi terdepan sebagai sarana untuk menyebarluaskan berbagai publikasi terkait kemajuan pendidikan dan pencapaian SMK DIPONEGORO 1 Jakarta terkini.</p>
+                    </div>
+                    <div class="mb-6">
+                        <div class="mb-2.5 font-bold text-white lg:mr-[11rem]">Jurusan</div>
+                        <ul class="mb-0 list-none">
+                            <li><a href="#mp" class="text-white">Manajemen Perkantoran</a></li>
+                            <li><a href="#dkv" class="text-white">Desain Komunikasi Visual</a></li>
+                            <li><a href="#tkj" class="text-white">Teknik Komputer Jaringan</a></li>
+                        </ul>
+                    </div>
+                    <div class="mb-6">
+                        <div class="mb-2.5 font-bold text-white lg:mr-[8rem]">Fasilitas</div>
+                        <ul class="mb-0 list-none">
+                            <li><a href="#fasilitas" class="text-white">Kantin Sekolah</a></li>
+                            <li><a href="#fasilitas" class="text-white">Studio Multimedia</a></li>
+                            <li><a href="#fasilitas" class="text-white">Lab Multimedia</a></li>
+                        </ul>
+                    </div>
+                    <div class="mb-6">
+                        <div class="mb-2.5 font-bold text-white lg:mr-[7rem]">PPDB</div>
+                        <ul class="mb-0 list-none">
+                            <li><a href="#ppdb" class="text-white">Jalur Zonasi</a></li>
+                            <li><a href="#ppdb" class="text-white">Jalur Afirmasi</a></li>
+                            <li><a href="#ppdb" class="text-white">Jalur Prestasi</a></li>
+                        </ul>
+                    </div>
+                    <div class="mb-6">
+                        <div class="mb-2.5 font-bold text-white">Berita</div>
+                        <ul class="mb-0 list-none">
+                            <li><a href="#berita" class="text-white">Exclusive</a></li>
+                            <li><a href="#berita" class="text-white">Utama</a></li>
+                            <li><a href="#berita" class="text-white">Umum</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-black p-4 text-center text-white">© 2023 Copyright -
+                <a class="text-white" href="#">SMK Diponegoro 1</a>
+            </div>
+        </div>
+        <!-- Footer End -->
+    </section>
+
+    <!-- Styling Link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- CDN AOS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script> <!-- CDN GSAP-->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script> <!-- CDN Splide JS-->
+    <script src="https://cdn.tailwindcss.com"></script> <!-- CDN Tailwind CSS-->
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script> <!-- CDN Ion Icons-->
+
+    <!-- Tailwind CSS-->
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+
+    <!--Splide JS-->
+    <script type="text/javascript">
+        var splide1 = new Splide( '#splide1', {
+            perPage: 1,
+            padding: '3rem',
+            gap: '5rem',
+            pagination: true,
+            arrows: true,
+            // breakpoints: {
+            //     0: {
+            //         perPage: 1,
+            //     },
+            //     540: {
+            //     perPage: 1,
+            //     gap    : '.1rem',
+            //     },
+            // },
+            } );
+        
+            splide1.mount();
+
+        var splide = new Splide( '#splide2', {
+            perPage: 3,
+            focus  : 0,
+            padding: '3rem',
+            gap: '6rem',
+            omitEnd: true,
+            breakpoints: {
+                920: {
+                    perPage: 1,
+                    gap: '3rem',
+                    padding: '3rem',
+                },
+            },
+            } );
+
+            splide.mount();
+    </script>
+
+    <!-- Animate AOS -->
+    <script>
+        AOS.init({
+            duration: 1500,
+        })
+    </script>
+
+    <!-- Countdown Script -->
+    <script>
+            const days = document.getElementById('days');
+            const hours = document.getElementById('hours');
+            const minutes = document.getElementById('minutes');
+            const seconds = document.getElementById('seconds');
+
+            const currentYear = new Date().getFullYear();
+
+            const newYearTime = new Date(`January 01 ${currentYear + 1} 00:00:00`);
+
+            // Update countdown time
+            function updateCountdown() {
+                const currentTime = new Date();
+                const diff = newYearTime - currentTime;
+
+                const d = Math.floor(diff / 10000 / 60 / 60 / 24);
+                const h = Math.floor(diff / 10000 / 60 / 60) % 24;
+                const m = Math.floor(diff / 1000 / 60) % 60;
+                const s = Math.floor(diff / 1000) % 60;
+
+                days.innerHTML = d;
+                hours.innerHTML = h < 10 ? '0' + h : h;
+                minutes.innerHTML = m < 10 ? '0' + m : m;
+                seconds.innerHTML = s < 10 ? '0' + s : s;
+            }
+
+            setInterval(updateCountdown, 1000);
+        </script>
+
+        <!-- Chat App-->
+        <script type="text/javascript">window.$crisp=[];
+            window.CRISP_WEBSITE_ID="dfad88df-54d6-492b-b14a-df8ef35feed0";
+            (function(){d=document;
+            s=d.createElement("script");
+            s.src="https://client.crisp.chat/l.js";
+            s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})
+            ();
+        </script>
+</body>
+</html>
