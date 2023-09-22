@@ -1,0 +1,18 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+#bar {
+    animation-name: progress;
+    animation-timeline: scroll();
+    transform-origin: 0%;
+}
+
+@keyframes progress {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
